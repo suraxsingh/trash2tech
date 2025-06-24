@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #0a0a0a;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #0a0a0a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 30px;
+  box-shadow: 0 4px 20px rgba(0, 255, 153, 0.1);
+}
+.nav-logo {
+  color: #00ff99;
+  font-weight: bold;
+  font-size: 22px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+.nav-links li a:hover {
+  color: #00ff99;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(130deg, #00ff99 10%, #006666 90%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 40px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 25px rgba(0, 255, 153, 0.3);
+  max-width: 700px;
+}
+.logo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 48px;
+  color: #00ff99;
+}
+.tagline {
+  font-size: 18px;
+  color: #bfffcf;
+}
+.mission {
+  font-size: 16px;
+  color: #e6e6e6;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+/* Team Section */
+.team-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #111;
+}
+.team-section h2 {
+  font-size: 32px;
+  color: #00ff99;
+  margin-bottom: 40px;
+}
+.team-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.card {
+  background: linear-gradient(145deg, #1c1c1c, #222);
+  padding: 30px 20px;
+  width: 240px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 255, 153, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  text-align: center;
+}
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 255, 153, 0.2);
+}
+.card h3 {
+  font-size: 20px;
+  margin: 10px 0 5px;
+}
+.card a {
+  text-decoration: none;
+  color: #00ff99;
+  font-weight: 500;
+  font-size: 14px;
+}
+.bio {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #ccc;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+.card:hover .bio {
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 100px;
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #00ff99;
+  box-shadow: 0 0 20px #00ff99;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #121212;
+  padding: 80px 20px;
+  text-align: center;
+}
+.contact-section h2 {
+  color: #00ff99;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+}
+.contact-form button {
+  padding: 10px;
+  background-color: #00ff99;
+  border: none;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  border-radius: 8px;
+}
+#contact-status {
+  margin-top: 20px;
+  color: #00ff99;
+  font-size: 14px;
+}
+
+/* Scroll Button */
+.scroll-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00ff99;
+  color: #000;
+  border: none;
+  padding: 12px 16px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0, 255, 153, 0.3);
+  transition: background 0.3s ease;
+}
+.scroll-btn:hover {
+  background-color: #00e68a;
+}

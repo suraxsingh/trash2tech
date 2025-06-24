@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trash2Tech | Founders</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar">
+    <div class="nav-logo">Trash2Tech</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#founders">Founders</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="hero">
+    <div class="glass">
+      <h1 class="logo">Trash2Tech</h1>
+      <p class="tagline">Turning Waste into Innovation</p>
+      <p class="mission">
+        We are a youth-driven startup building AI-powered smart waste management systems to transform how India sorts, tracks, and recycles waste — one bin at a time.
+      </p>
+    </div>
+  </header>
+
+  <!-- Founders Section -->
+  <section class="team-section" id="founders">
+    <h2>Meet the Founders</h2>
+    <div class="team-cards">
+      <div class="card" onmouseenter="showBio(this)" onmouseleave="hideBio(this)">
+        <img class="avatar" src="suraj.jpg" alt="Suraj Singh" />
+        <h3>Suraj Singh</h3>
+        <a href="https://instagram.com/suraxsingh" target="_blank">@suraxsingh</a>
+        <p class="bio">Tech , Passionate about AI & Sustainability.</p>
+      </div>
+      <div class="card" onmouseenter="showBio(this)" onmouseleave="hideBio(this)">
+        <img class="avatar" src="eshaan.jpg" alt="Eshaan Bahl" />
+        <h3>Eshaan Bahl</h3>
+        <a href="https://instagram.com/iameshaanbahl_" target="_blank">@iameshaanbahl_</a>
+        <p class="bio">Networking , Operations & Outreach. Enthusiastic about smart communities.</p>
+      </div>
+      <div class="card" onmouseenter="showBio(this)" onmouseleave="hideBio(this)">
+        <img class="avatar" src="shubayu.jpg" alt="Shubayu Roy" />
+        <h3>Shubayu Roy</h3>
+        <a href="https://instagram.com/slay._stryx" target="_blank">@slay._stryx</a>
+        <p class="bio">AI , Design & Strategy. Turning waste into innovation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section class="contact-section" id="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form" onsubmit="handleContact(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="contact-status"></p>
+  </section>
+
+  <!-- Scroll Button -->
+  <button class="scroll-btn" onclick="scrollToFounders()">↓ Meet the Founders</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
