@@ -6,6 +6,14 @@
   <title>Trash2Tech | Founders</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter&display=swap" rel="stylesheet" />
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("2CAsgDqg1h_Y57Iv9");
+    })();
+  </script>
 </head>
 <body>
 
@@ -38,34 +46,36 @@
         <img class="avatar" src="suraj.jpg" alt="Suraj Singh" />
         <h3>Suraj Singh</h3>
         <a href="https://instagram.com/suraxsingh" target="_blank">@suraxsingh</a>
-        <p class="bio">Tech , Passionate about AI & Sustainability.</p>
+        <p class="bio">Tech, Passionate about AI & Sustainability.</p>
       </div>
       <div class="card" onmouseenter="showBio(this)" onmouseleave="hideBio(this)">
         <img class="avatar" src="eshaan.jpg" alt="Eshaan Bahl" />
         <h3>Eshaan Bahl</h3>
         <a href="https://instagram.com/iameshaanbahl_" target="_blank">@iameshaanbahl_</a>
-        <p class="bio">Networking , Operations & Outreach. Enthusiastic about smart communities.</p>
+        <p class="bio">Networking, Operations & Outreach. Enthusiastic about smart communities.</p>
       </div>
       <div class="card" onmouseenter="showBio(this)" onmouseleave="hideBio(this)">
         <img class="avatar" src="shubayu.jpg" alt="Shubayu Roy" />
         <h3>Shubayu Roy</h3>
         <a href="https://instagram.com/slay._stryx" target="_blank">@slay._stryx</a>
-        <p class="bio">AI , Design & Strategy. Turning waste into innovation.</p>
+        <p class="bio">AI, Design & Strategy. Turning waste into innovation.</p>
       </div>
     </div>
   </section>
 
   <!-- Contact Us Section -->
-  <section class="contact-section" id="contact">
-    <h2>Contact Us</h2>
-    <form class="contact-form" onsubmit="handleContact(event)">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-    <p id="contact-status"></p>
-  </section>
+  <!-- Contact Us Section -->
+<section class="contact-section" id="contact">
+  <h2>Contact Us</h2>
+  <form id="contact-form" class="contact-form">
+    <input type="text" id="name" name="name" placeholder="Your Name" required />
+    <input type="email" id="email" name="email" placeholder="Your Email" required />
+    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+  <p id="contact-status"></p>
+</section>
+
 
   <!-- Scroll Button -->
   <button class="scroll-btn" onclick="scrollToFounders()">↓ Meet the Founders</button>
